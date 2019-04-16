@@ -47,10 +47,53 @@
                 <viewController id="GOh-K2-hTG" customClass="LocationDetailsViewController" customModule="Za__Hunter_Dos" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1dB-cA-i9R">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QNZ-Nh-VhH">
+                                <rect key="frame" x="88" y="186" width="200" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="ajX-Ik-3Gz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="COE-XU-I5O">
+                                <rect key="frame" x="88" y="294" width="200" height="150"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GfG-Of-yR7">
+                                <rect key="frame" x="88" y="511" width="200" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="aEN-LC-Psm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="QNZ-Nh-VhH" firstAttribute="top" secondItem="tYj-fw-DgS" secondAttribute="top" constant="122" id="8z5-1T-paI"/>
+                            <constraint firstItem="tYj-fw-DgS" firstAttribute="bottom" secondItem="GfG-Of-yR7" secondAttribute="bottom" constant="106" id="Ajv-xF-zzN"/>
+                            <constraint firstItem="COE-XU-I5O" firstAttribute="top" secondItem="QNZ-Nh-VhH" secondAttribute="bottom" constant="58" id="Kxu-79-RcP"/>
+                            <constraint firstItem="QNZ-Nh-VhH" firstAttribute="trailing" secondItem="COE-XU-I5O" secondAttribute="trailing" id="Qj4-xF-pXJ"/>
+                            <constraint firstItem="QNZ-Nh-VhH" firstAttribute="leading" secondItem="COE-XU-I5O" secondAttribute="leading" id="T55-dD-V53"/>
+                            <constraint firstItem="COE-XU-I5O" firstAttribute="trailing" secondItem="GfG-Of-yR7" secondAttribute="trailing" id="b5e-FL-WEB"/>
+                            <constraint firstItem="QNZ-Nh-VhH" firstAttribute="centerX" secondItem="1dB-cA-i9R" secondAttribute="centerX" id="ejS-lk-CwB"/>
+                            <constraint firstItem="QNZ-Nh-VhH" firstAttribute="leading" secondItem="tYj-fw-DgS" secondAttribute="leading" constant="88" id="g3k-Pm-aFD"/>
+                            <constraint firstItem="GfG-Of-yR7" firstAttribute="top" secondItem="COE-XU-I5O" secondAttribute="bottom" constant="67" id="nfR-Jf-U66"/>
+                            <constraint firstItem="COE-XU-I5O" firstAttribute="leading" secondItem="GfG-Of-yR7" secondAttribute="leading" id="vfb-Ew-Zq4"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="tYj-fw-DgS"/>
                     </view>
+                    <connections>
+                        <outlet property="addressLabel" destination="COE-XU-I5O" id="WXl-e0-fNU"/>
+                        <outlet property="nameLabel" destination="QNZ-Nh-VhH" id="Rsm-XB-3NU"/>
+                        <outlet property="phoneLabel" destination="GfG-Of-yR7" id="UoR-Hd-CO0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fTR-Au-mfb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
