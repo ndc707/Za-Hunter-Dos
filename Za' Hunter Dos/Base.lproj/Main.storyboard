@@ -54,14 +54,14 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="ajX-Ik-3Gz"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="1" green="0.2421887958" blue="0.15472208609999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="COE-XU-I5O">
                                 <rect key="frame" x="88" y="294" width="200" height="150"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="1" green="0.2421887958" blue="0.15472208609999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GfG-Of-yR7">
@@ -69,22 +69,37 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="aEN-LC-Psm"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="1" green="0.2421887958" blue="0.15472208609999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="nsv-Db-Xyf">
+                                <rect key="frame" x="111.15032679738556" y="597" width="150" height="50.000000000000057"/>
+                                <rect key="contentStretch" x="1" y="1" width="1" height="1"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="ZWV-jP-Bis"/>
+                                    <constraint firstAttribute="height" constant="30" id="zpe-gu-MQ2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
+                                <state key="normal" title="Directions"/>
+                                <connections>
+                                    <action selector="onDirectionsButtonTapped:" destination="GOh-K2-hTG" eventType="touchUpInside" id="OsA-Wa-GHR"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="QNZ-Nh-VhH" firstAttribute="top" secondItem="tYj-fw-DgS" secondAttribute="top" constant="122" id="8z5-1T-paI"/>
                             <constraint firstItem="tYj-fw-DgS" firstAttribute="bottom" secondItem="GfG-Of-yR7" secondAttribute="bottom" constant="106" id="Ajv-xF-zzN"/>
                             <constraint firstItem="COE-XU-I5O" firstAttribute="top" secondItem="QNZ-Nh-VhH" secondAttribute="bottom" constant="58" id="Kxu-79-RcP"/>
+                            <constraint firstItem="nsv-Db-Xyf" firstAttribute="centerX" secondItem="GfG-Of-yR7" secondAttribute="centerX" id="Pt3-43-oFu"/>
                             <constraint firstItem="QNZ-Nh-VhH" firstAttribute="trailing" secondItem="COE-XU-I5O" secondAttribute="trailing" id="Qj4-xF-pXJ"/>
                             <constraint firstItem="QNZ-Nh-VhH" firstAttribute="leading" secondItem="COE-XU-I5O" secondAttribute="leading" id="T55-dD-V53"/>
                             <constraint firstItem="COE-XU-I5O" firstAttribute="trailing" secondItem="GfG-Of-yR7" secondAttribute="trailing" id="b5e-FL-WEB"/>
                             <constraint firstItem="QNZ-Nh-VhH" firstAttribute="centerX" secondItem="1dB-cA-i9R" secondAttribute="centerX" id="ejS-lk-CwB"/>
                             <constraint firstItem="QNZ-Nh-VhH" firstAttribute="leading" secondItem="tYj-fw-DgS" secondAttribute="leading" constant="88" id="g3k-Pm-aFD"/>
                             <constraint firstItem="GfG-Of-yR7" firstAttribute="top" secondItem="COE-XU-I5O" secondAttribute="bottom" constant="67" id="nfR-Jf-U66"/>
+                            <constraint firstItem="nsv-Db-Xyf" firstAttribute="top" secondItem="GfG-Of-yR7" secondAttribute="bottom" constant="42" id="sdN-mq-uE1"/>
                             <constraint firstItem="COE-XU-I5O" firstAttribute="leading" secondItem="GfG-Of-yR7" secondAttribute="leading" id="vfb-Ew-Zq4"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="tYj-fw-DgS"/>
